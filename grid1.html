@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<style>
+	body{
+		display:grid;
+		grid-template-areas:
+		"header header header"
+		"aside content content"
+		"footer footer footer";
+		grid-template-rows:60px 1fr 60px;
+		grid-template-columns:20% 1fr 15%;
+		grid-gap:0px;
+		height:100vh;
+		margin:0;
+	}
+	#header{
+		grid-area:header;
+	}
+	#aside{
+		grid-area:aside;
+	}
+	#content{
+		grid-area:content;
+	}
+	#footer{
+		grid-area:footer;
+	}
+	header,aside,footer{
+	background:black;
+	color:white;
+	}
+</style>
+</head>
+<body>
+	<header id="header">
+	Header
+	</header>
+	<aside id="aside">
+		Aside
+	</aside>
+	<main id="content">
+		Main
+	</main>
+	<footer id="footer">
+		Footer
+	</footer>
+</body>
+</html>
